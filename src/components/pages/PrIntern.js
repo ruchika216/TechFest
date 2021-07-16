@@ -3,7 +3,7 @@ import React from 'react'
 function PrIntern() {
     return (
         <div>
-            <h1>PrIntern</h1>
+            <h1>PR INTERN </h1>
         </div>
     )
 }

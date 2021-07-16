@@ -16,9 +16,16 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import HomeIcon from '@material-ui/icons/Home';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import DomainIcon from '@material-ui/icons/Domain';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+// import InboxIcon from '@material-ui/icons/MoveToInbox';
+// import MailIcon from '@material-ui/icons/Mail';
 import { MenuItem } from '@material-ui/core';
+
+import { withRouter } from "react-router-dom";
+
 
 const drawerWidth = 240;
 
@@ -79,10 +86,34 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function Nav() {
+const Nav = props => {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
+    const { history } = props;
+
+    const itemsList = [
+        {
+            text: "Home",
+            icon: <HomeIcon />,
+            onClick: () => history.push("/")
+        },
+        {
+            text: "Dashboard",
+            icon: <DashboardIcon />,
+            onClick: () => history.push("/dashboard")
+        },
+        {
+            text: "Domain",
+            icon: <DomainIcon />,
+            onClick: () => history.push("/domain")
+        },
+        {
+            text: "Contact Us",
+            icon: <ContactMailIcon />,
+            onClick: () => history.push("/contact-us")
+        }
+    ];
 
     const handleDrawerOpen = () => {
         setOpen(true);
@@ -120,19 +151,8 @@ export default function Nav() {
                     </IconButton>
                 </Toolbar>
             </AppBar>
-            {/* <main
-                className={clsx(classes.content, {
-                    [classes.contentShift]: open,
-                })}
-            >
-                <div className={classes.drawerHeader} />
-                <Typography paragraph>
-                    HI
-                </Typography>
-                <Typography paragraph>
-                    HEllo
-                </Typography>
-            </main> */}
+
+
             <Drawer
                 className={classes.drawer}
                 variant="persistent"
@@ -149,23 +169,24 @@ export default function Nav() {
                 </div>
                 <Divider />
                 <List>
-                    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
+                    {itemsList.map((item, index) => {
+                        const { text, icon, onClick } = item;
+                        return (
+                            <ListItem button key={text} onClick={onClick}>
+                                {icon && <ListItemIcon>{icon}</ListItemIcon>}
+                                <ListItemText primary={text} />
+                            </ListItem>
+                        );
+                    })}
                 </List>
+
                 <Divider />
-                <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
-                </List>
+
             </Drawer>
         </div>
     );
 }
+
+export default withRouter(Nav);
+
+
