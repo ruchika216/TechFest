@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+@font-face {
+    font-family:VBI ;
+    src: url(../../assets/fonts/vipnagorgialla\ bd\ it.otf);
+}
+@font-face {
+    font-family:VRI ;
+    src: url(../../assets/fonts/vipnagorgialla\ rg\ it.otf);
+}
+@font-face {
+    font-family:EMI ;
+    src: url(../../assets/fonts/exo.medium-italic.otf);
+}
+
+.logo {
+    font-family: VBI;
+    position: fixed;
+    padding-right: 74rem;
+    color: white;
+     width: 76.9rem; 
+     padding-top:3rem;
+     font-size: 3rem;
+    font-weight: 900;
+}

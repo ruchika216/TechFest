@@ -1,13 +1,531 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    margin: 0%;
+    padding: 0%;
 }
+html{
+font-size: 62.5%;
+}
+body{
+position: relative;
+overflow-y: scroll;
+position: sticky;
+
+   background: #02020E;  
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+   
+}
+.gifadd{   
+    background-image: url("./assets/images/EarthImage.png");
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100% 70%;
+   
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2.306rem;
+    position: static;
+    top: 0%;
+    cursor: pointer;
+}
+.rightnav{
+    padding-left: 4rem;
+    color: white;
+     width: 76.9rem; 
+     padding-top:3rem;
+     font-size: 3rem;
+    font-weight: 900;
+     
+}
+.navlist{
+width: 76.9rem;
+display: flex;
+text-align: center;
+padding-top: 2.306rem;
+padding-left: 30.759rem;
+}
+.navlist li{
+      list-style: none;
+      font-size: 2rem;
+}
+.navlist li a {
+    text-decoration: none;
+}
+.navlist li a:hover {
+    color: chartreuse;
+}
+.showsidemenu{
+    font-size: 4rem;
+    color: white;
+}
+.sidemenu{
+height: 60%;
+width: 30%;
+position: fixed;
+top: 0%;
+right: 0%;
+z-index: 1;
+padding-top: 10%;
+overflow-x: hidden;
+background: green;
+margin-top: 8%;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 40px;
+}
+.sidemenu li {
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 20px;
+    
+}
+.sidemenu a{
+font-size: 25px;
+margin-top: 20px ;
+text-decoration: none;
+}
+.sidemenu .hidesidemenu{
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    font-size: 50px;
+}
+.Register
+{
+    margin-top: 2rem;
+}
+.PRIntern{
+  margin-top: 2rem;
+}
+.Register a{
+color: white;
+border: 0.1rem solid white;
+padding: 0.2rem 2rem;
+border-radius: 0.5rem;
+}
+.PRIntern a{
+    color: white;
+}
+.menubar{
+    color: white;
+}
+ 
+    .arrow{
+        padding-top: 24rem;
+    }
+    .arrow img{
+    width: 40rem;
+    
+    }
+    .logo1{
+        position: relative;
+        margin-top: 2.73rem;
+    }
+    .logo1 img{
+        margin-left: 33rem;
+        background: transparent;
+    }
+    .firstsection{
+        display: flex;
+        justify-content: center;
+        text-align: right;
+        height:70vh;
+    }
+    .leftlogo1{
+        max-width: 35.4453rem;
+        position: absolute;
+        top: 12rem;
+        right: 39rem;
+    }
+    .rightlogo1{
+        mix-blend-mode: lighten;
+        width: 60%;
+        overflow: hidden;
+    }
+    .text1{
+       position: absolute;
+       top: 23.2rem;
+       left: 2rem;
+       text-align: left;
+    }
+    .text1 h1{
+        color: white;
+        font-size: 4rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    .text1 p{
+        font-family: italic;
+        font-size: 1.3rem;
+        color: white;
+    }
+    
+   .text1 li{
+     width: 12rem;
+     list-style: none;
+     background: cornflowerblue;
+     border-radius: .6rem;
+     text-align: center;
+     
+   }
+   .text1 li a{
+       
+       color: white;
+       text-decoration: none;
+       font-size: 1.5rem;
+   }
+
+ .second{
+    background: linear-gradient(180.89deg, rgba(61, 72, 93, 0) 7.07%, rgba(44, 72, 126, 0.189266) 14.36%, rgba(26, 72, 163, 0.394602) 22.28%, rgba(1, 72, 215, 0.69) 33.66%, #00349C 43.97%, #102C66 63.59%);
+    };
+    
+    .navlist{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 4% 0%;
+    }
+    .navlist li{
+        list-style: none;
+        padding:0% 6%;
+    }
+    .navlist h3{
+        padding: 0% 6%;
+    }
+    .navlist li a{
+        text-decoration: none;
+    }
+    .middle{
+        margin-top: 25rem;
+       display: flex;
+       justify-content: center;
+       text-align: left;
+       padding-top: 14rem;
+       padding-bottom: 20rem;
+    }
+    .text{
+        margin-left: 5rem;
+        margin-right: 4rem;
+        margin-top: 3rem;
+    }
+    .bold {
+        font-size: 5.5rem;
+        font: bold;
+        color: white;
+    }
+    .text p{ 
+        font-size: 1.5rem;
+        font-family: italic;
+        padding-top: .2rem;
+      color:white;
+      padding-bottom: 0.8rem;
+    }
+    .text h4{
+        color: lightgreen;
+    }
+    .Explore{
+        background-color: teal;
+        height: 2.8rem;
+        width: 15rem;
+        border-radius: .5rem;
+        border: none;
+    }
+    .aboutus{
+        background: transparent;
+        height: 2.8rem;
+        width:8rem ;
+        border-radius: .5rem;
+        border: .1rem solid white;
+    }
+    .logoimage{
+        position: relative;
+        margin-right: 4rem
+    }
+    .logoimage img{
+        width: 40rem;
+        height: 25rem;
+        border: 2px solid black;
+        border-radius: 7rem;
+        margin-left: 10rem;
+    }
+    .featurevideo{
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        color: white;
+        position: absolute;
+        margin-left: 50rem;
+    }
+    .featurevideo img{
+        height: 11rem;
+        margin-top: 5rem;
+        margin-left:9rem ;
+    }
+    h2 {
+        display: flex;
+        flex-direction: row;
+    }
+      
+    h2:before,
+    h2:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: .2rem solid lightgreen;
+        
+        margin-bottom: 1.5rem
+    }
+    h2:before{
+     margin-right: 5rem;
+    }
+    h2:after{
+        margin-left: 5rem;
+    }
+    .sponser{
+        font-size: 2rem;
+        width: 90rem;
+        margin-left: 18rem;
+        border-bottom: .2rem solid lightgreen;
+    }
+    .sponsericons img{
+        margin: 7rem;
+    }
+    .icons{
+        width: 90rem;
+        color: white;
+        display: flex;
+        margin-left: 16rem;
+        padding: 2rem 2rem;
+    }
+    .mediaicons{
+     
+    }
+    .icons img{
+        height: 2.5rem;
+        margin: 0% .5rem ;
+        padding-top: .2rem;
+        opacity: 0.6;
+    }
+    .copyright{
+        margin-left: 2rem;
+        font-size: 1.3rem;
+    }
+    .community{
+        background: transparent;
+        height: 2.7rem;
+        margin: 0% 15rem;
+        padding: 0rem 1rem;
+        border-radius: 5px ;
+        color: white;
+    }
+    
+    
+   
+    
+    
+ @media screen and (max-width: 1100px) {
+        html,body
+        {    
+            margin: 0%;
+            padding: 0%;
+            font-size: 60%;
+            overflow-x: hidden;
+        }
+        .navbar{
+            
+            display: inline;
+        }
+        .navlist {
+            width: 80%;
+            padding-left: 25%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .rightnav{
+            
+            margin-top: 7rem;
+            width: 10%;
+            margin-left: 40%;
+        }
+        
+        .logo1{
+            margin-right: 0rem;
+        }
+        .rightlogo1{
+            width: 30rem;
+            margin-right: 13rem;
+        }
+        .leftlogo1{
+            width: 30rem;
+        top: 15rem;
+        right: 18rem;
+        
+       }
+       .text1{
+        top: 24.5rem;
+        left: 15.5rem;
+        text-align: left;
+     }
+     
+     .firstsection{
+         width: 105%;
+     }
+       .arrow{  
+        position: absolute;
+        top: 30rem;
+        left: 0rem;
+        
+    }
+    
+    
+    
+        .middle{
+            text-align: center;
+            display: inline;
+            margin-top: 5rem;
+            margin-left: 0rem;
+            padding-bottom: 10rem;
+        }
+        .logoimage{
+            margin-right: 10%;
+            margin-bottom: 5%;
+        }
+        .logoimage img {
+            margin-left: 5rem;
+            position: relative;
+            width: 80%;
+        }
+        .featurevideo{
+            top: 60%;
+            right: 51%;
+         }
+         .featurevideo img{
+             margin-top: 7%;
+             margin-left: 42%;
+             height: 15rem;
+         }
+         .featurevideo h3{
+             font-size: 2.5rem;
+         }
+        .text{
+            margin-bottom: 10%;
+            margin-left: 9%;
+            margin-top: 0px;
+            
+        }
+
+        .sponser{
+            text-align: center;
+            font-size: 2rem;
+            width: 80%;
+            margin-left: 10%;
+            border-bottom: .2rem solid lightgreen;
+        }
+        .icons{
+            display: inline;
+            text-align: center;
+        }
+        .copyright{
+            position: relative;
+            margin-right: 60%;
+            margin-top: 3rem;
+            font-size: 1.9rem;
+        }
+        .community{
+            position: absolute;
+            height: 5rem;
+            width: 18rem;
+            margin-left:65% ;
+            margin-top: -4rem;
+        }
+        .mediaicons{
+            margin-left: -2%;
+            margin-top: 3rem;
+        }
+        .mediaicons img{
+            width: 3rem;
+            height: 5rem;
+            padding: 2rem;
+        }
+        
+    }@media screen and (max-width: 980px) {
+        html,body
+        {    
+           
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+            font-size: 55%;
+            overflow-x: hidden;
+        }  
+        .rightnav {
+            margin-top: 7rem;
+            width: 10%;
+            margin-left: 35%;
+        }
+        .navlist {
+            width: 80%;
+            padding-left: 21%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+      
+    }
+    @media screen and (max-width: 600px) {
+        html,body
+        {    
+           
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+            font-size: 45%;
+            overflow-x: hidden;
+        }
+        
+        
+        
+        .rightnav {
+            margin-left: 30%;
+        }
+        .navlist {
+            padding-left: 15%;
+            margin-bottom: 3rem;
+        }
+        
+        .arrow img{
+            width: 30rem;
+        }
+        
+        .logo1{
+            margin-right: 0rem;
+        }
+        .rightlogo1{
+            width: 30rem;
+            margin-right: 13rem;
+        }
+        .leftlogo1{
+            width: 30rem;
+        top: 15rem;
+        right: 18rem;
+        
+       }
+    }
+    
+    @media screen and (max-width: 350px) {  
+        html,body
+        {    
+            
+            margin: 0%;
+            padding: 0%;
+            font-size: 45%;
+            overflow-x: hidden;
+        } 
+        .featurevideo{
+            top: 44%;
+            right: 45%;
+         }
+    
+    }
+  
