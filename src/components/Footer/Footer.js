@@ -1,9 +1,13 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import Facebook from '../../assets/Icons/facebookicon.svg';
 import Instagram from '../../assets/Icons/instagramicon.svg';
 import LinkedinIn from '../../assets/Icons/linkedinicon.svg';
 import Youtube from '../../assets/Icons/youtubeicon.svg';
+
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 
 function Footer() {
     return (
@@ -24,10 +28,11 @@ function Footer() {
                 </div>
                 <button className="community">Join our telegram community</button>
                 <div className="mediaicons">
-                    <img src={Facebook} alt="facebook" />
-                    <img src={Instagram} alt="instagram" />
-                    <img src={LinkedinIn} alt="linkedin" />
-                    <img src={Youtube} alt="youtube" />
+                    <FacebookIcon color="inherit" fontSize="large" />
+                    <InstagramIcon color="inherit" fontSize="large" />
+                    <LinkedInIcon color="inherit" fontSize="large" />
+                    <YouTubeIcon color="inherit" fontSize="large" />
+
                 </div>
             </footer>
 

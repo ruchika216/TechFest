@@ -1,10 +1,11 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import Nav from './components/Navbar/Nav';
 import Home from './components/pages/Home';
+import PrIntern from './components/pages/PrIntern';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Register from './components/pages/Register';
 
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={Home} />
-        {/* <Route exact path='/pr-intern' component={PrIntern} /> */}
+        <Route exact path='/pr-intern' component={PrIntern} />
+        <Route exact path='/register' component={Register} />
+
 
       </Switch>
       <Footer />

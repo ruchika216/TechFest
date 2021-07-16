@@ -3,7 +3,8 @@ import Nav from '../Navbar/Nav';
 import img1 from '../../assets/images/Logo.png';
 import img2 from '../../assets/images/BgLogoGradient.png';
 import img3 from '../../assets/images/Logo.png';
-import img4 from '../../assets/images/video.png';
+import Button from '@material-ui/core/Button';
+// import img4 from '../../assets/images/video.png';
 
 // import '../../index.css';
 
@@ -20,7 +21,9 @@ function Header() {
                             Sliet Longowal’s  Virtual <br />
                             Techno- Management Fest
                         </p>
-                        <li><a href="./index2.html"> Adaventure Here</a></li>
+                        <Button variant="outlined" color="primary">
+                            Adventure Here
+                        </Button>
                     </div>
                     <img src={img1} alt="" className="leftlogo1" />
                     <img src={img2} className="rightlogo1" />
