@@ -39,12 +39,14 @@ const useStyles = makeStyles((theme) => ({
             duration: theme.transitions.duration.leavingScreen,
         }),
     },
-    appBarShift: {
-        width: `calc(100% - ${drawerWidth}px)`,
+   appBar: {
+        background: 'transparent',
+        boxShadow: 'none',
         transition: theme.transitions.create(['margin', 'width'], {
-            easing: theme.transitions.easing.easeOut,
-            duration: theme.transitions.duration.enteringScreen,
+            easing: theme.transitions.easing.sharp,
+            duration: theme.transitions.duration.leavingScreen,
         }),
+    },
         marginRight: drawerWidth,
     },
     title: {
