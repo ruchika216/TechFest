@@ -1,0 +1,21 @@
+@import url(//db.onlinewebfonts.com/c/81dd3fb936d766a9cdee26cc3ca65477?family=Vipnagorgialla);
+@import url(//db.onlinewebfonts.com/c/00074c9ea86912d3a5142b6eaef49e8a?family=VipnagorgiallaW90-Regular);
+
+@font-face {
+  font-family: 'VBI';
+  src: url(../../../assets/fonts/vipnagorgialla\ rg\ it.otf);
+}
+@font-face {
+  font-family: 'VRI';
+  src: url(../../../assets/fonts/VpiBD.otf);
+}
+@font-face {
+  font-family: 'EXO';
+  src: url(../../../assets/fonts/exo.medium-italic.otf);
+}
+
+.feature-container {
+    background: rgb(40, 55, 194);
+    
+}
+

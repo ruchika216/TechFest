@@ -1,28 +1,33 @@
-import './App.css';
+// import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './components/pages/Home';
-import PrIntern from './components/pages/PrIntern';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Register from './components/pages/Register';
+import Nav from './components/MainMenu/Navbar/Nav';
+import Home from './pages/Home';
+import PrIntern from './pages/PrIntern';
+import Register from './pages/Register';
+import Domain from './pages/Domain';
+import Workshop from './pages/Workshop';
+import AboutUs from './pages/AboutUs';
+import Sponsor from './pages/Sponsor';
+import Contact from './pages/Contact';
 
 
 function App() {
   return (
     <Router>
-
-
+      <Nav />
       <Switch>
-        {/* <Header /> */}
-        <Route exact path='/' component={Header} />
+        <Route exact path='/' component={Home} />
         <Route exact path='/pr-intern' component={PrIntern} />
         <Route exact path='/register' component={Register} />
-
-
+        <Route exact path='/domain' component={Domain} />
+        <Route exact path='/workshop' component={Workshop} />
+        <Route exact path='/about-us' component={AboutUs} />
+        <Route exact path='/sponsor' component={Sponsor} />
+        <Route exact path='/contact' component={Contact} />
       </Switch>
-      {/* <Footer /> */}
     </Router>
+
   );
 }
 
