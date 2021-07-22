@@ -1,0 +1,265 @@
+.container{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+.content{
+    margin-top: 22vh;
+    margin-left: 7vw;
+    position: relative;
+    min-height: 73%;
+}
+.text{
+    color: white;
+    min-width: 16vw;
+    max-width: 35vw;
+    height:28vh;
+}
+
+.text h1{
+    font-family: VBI;
+    font-size: 3.3rem;
+}
+.text p{
+    font-size:1.3rem;
+    font-family: EMI;
+    font-weight: 500;
+    font-style: italic;
+}
+.earth{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    left: 9%;
+    overflow: hidden;
+    transform: rotateZ(-40deg);
+}
+.root{
+    max-width: 200px;
+    max-height: 150px;
+    background:  red;
+}
+.gradeintLogo{
+    position: absolute;
+    width: 40vw;
+    height: auto;
+    left: 10%;
+    top: 10vh;
+}
+.cardContainer{
+    width: 90vw;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+.cardHeadingContainer{
+    display: flex;
+}
+.cardHeadingContainer p{
+    font-size: 14px;
+    font-style: italic;
+}
+.cardHeadingContainer hr{
+    color: white;
+    width: 1300px;
+    margin-left: 15px;
+    border: 0.5px solid white;
+}
+.cards{
+    display:flex;
+    justify-content: space-between;
+}
+.cardRoot{
+    background: linear-gradient(100.03deg, #C4C4C4 18.45%, rgba(196, 196, 196, 0) 94.09%);
+    height: 150px;
+    padding-right: 22px;
+    border-radius: 4px;
+}
+.cardContent{
+    border: 0.5px solid white;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    display: flex;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.cardImage{
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.cardData{
+    margin-left: 12px;
+    margin-top: 2%;
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    overflow: hidden;
+}
+.cardData h4{
+    font-family: EMI;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+}
+.cardData p{
+    font-family: EMI;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-style: normal;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+.displayImage{
+    width: auto;
+    height: 70vh;
+    position: fixed;
+    right: 25vw;
+    top: 7vh;
+    z-index: 0;
+}
+.earthImage{
+    width:80vw;
+    height: 100vh;
+    top: 11vh;
+    right: -12vw;
+    position: absolute;
+    transform: rotateZ(-40.32deg);
+}
+.btnExploreEvents{
+    background:linear-gradient(95.67deg, #07E1FF -4.72%, #102C66 140.88%);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 24px 10px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 2vh;
+    margin-top: 10px;
+}
+.coordinators{
+    width: 90vw;
+    height: 9vh;
+    margin-top: 5px;
+    display: flex;
+    margin-bottom: 10px;
+    color: white;
+    font-family:EMI;
+    justify-content: space-between;
+}
+.coordinators h6{
+    margin-top: 10%;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+}
+.coordinators p{
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+}
+.facultyCoordinator{
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    height: inherit;
+}
+.facultyCoordinatorImage{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.domainCoordinator{
+    width: 35vw;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+}
+.active{
+    border: 0.5px solid greenyellow;
+}
+.animate-enter {
+    opacity: 0;
+  }
+  .animate-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .animate-exit {
+    opacity: 1;
+  }
+  .animate-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+  /* MEDIA QUERIES */
+  @media screen and (max-width:480px){
+    .text{
+        max-width: 100vw;
+        word-wrap: break-word;
+        max-height: 25vh;
+    }
+    .btnExploreEvents{
+        padding: 8px 20px;
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+    .facultyCoordinatorImage{
+        width: 40px;
+        height:40px;
+    }
+    .facultyCoordinator{
+        width: 10vw;
+    }
+    .coordinators h6{
+        font-size: 12px;
+    }
+    .coordinators p{
+        font-size: 10px;
+    }
+    .cardData h4{
+        font-size: 18px;
+    }
+    .cardData p{
+        font-size: 10px;
+    }
+     
+  }
+  /* TABLETS */
+  @media screen  and (max-width:768px){
+    .text{
+        max-width: 60vw;
+        max-height: 25vh;
+    }
+    .btnExploreEvents{
+        padding: 10px 22px;
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+    .facultyCoordinatorImage{
+        width: 40px;
+        height:40px;
+    }
+    .facultyCoordinator{
+        width: 10vw;
+    }
+    .coordinators h6{
+        font-size: 12px;
+    }
+    .coordinators p{
+        font-size: 10px;
+    }
+    .cardData h4{
+        font-size: 18px;
+    }
+    .cardData p{
+        font-size: 10px;
+    }
+  }
+  
+ 
