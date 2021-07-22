@@ -2,6 +2,7 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './components/MainMenu/Navbar/Nav';
+import Footer from './components/MainMenu/Footer/Footer';
 import Home from './pages/Home';
 import PrIntern from './pages/PrIntern';
 import Register from './pages/Register';
@@ -10,6 +11,7 @@ import Workshop from './pages/Workshop';
 import AboutUs from './pages/AboutUs';
 import Sponsor from './pages/Sponsor';
 import Contact from './pages/Contact';
+import './App.css';
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
         <Route exact path='/sponsor' component={Sponsor} />
         <Route exact path='/contact' component={Contact} />
       </Switch>
+      <Footer />
     </Router>
 
   );

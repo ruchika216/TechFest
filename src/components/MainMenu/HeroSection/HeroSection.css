@@ -18,6 +18,9 @@
   overflow-y: auto;
 } */
 
+body {
+  background:linear-gradient(rgb(23, 85, 179) 20%, #FFF7F7 40& );
+}
 
 .logo{
   width: 10px;
@@ -25,18 +28,18 @@
 
 .logo img {
   position: absolute;
-    width: 312px;
-    height: 270px;
-    left: 617px;
-    top: 237px;
+  width: 312px;
+  height: 270px;
+  left: 560px;
+  top: 219px;
 }
 
 .hero-text h1 {
   position: absolute;
     width: 304px;
     height: 53px;
-    left: 462px;
-    top: 344px;
+    left: 407px;
+    top: 324px;
     font-family: 'VBI';
     font-style: italic;
     font-weight: bold;
@@ -48,8 +51,8 @@
   position: absolute;
   width: 287.07px;
   height: 48.6px;
-  left: 485px;
-  top: 390px;
+  left: 401px;
+  top: 372px;
   font-family: Exo;
   font-style: italic;
   font-weight: 200;
@@ -61,8 +64,8 @@
   position: absolute;
   width: 127px;
   height: 30px;
-  left: 520px;
-  top: 445px;
+  left: 403px;
+  top: 429px;
   font-family: Exo;
   font-style: italic;
   font-weight: 400;
@@ -79,10 +82,26 @@
   
 }
 
-/* @media screen and (max-width:850px) {
+.hero-div{
+  margin: auto;
+  width: 60%;
+}
+
+@media screen and (max-width:850px) {
   .logo img {
+    position: absolute;
     width: 250px;
     height: 200px;
-    left: 408px;
+    left: 560px;
+    top: 219px;
   }
-} */
+}
+@media (max-width: 500px){
+  .logo img {
+    position: absolute;
+    width: 180px;
+    height: 150px;
+    left: 560px;
+    top: 219px;
+  }
+}
