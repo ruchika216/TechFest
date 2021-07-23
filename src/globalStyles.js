@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Vipnagorgialla';
  } 
 `;
 
@@ -25,29 +25,26 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#4B59F7' : '#0467FB')};
+font-family: EXO;
+  border-radius: 49px;
+  background: ${({ primary }) => (primary ? '#5de3f1' : '#0467FB')};
   white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
+  padding: ${({ big }) => (big ? '10px 27px' : '7px 10px')};
   color: #fff;
-  font-size: ${({ fontBig }) => (fontBig ? '10px' : '10px')};
+  font-size: ${({ fontBig }) => (fontBig ? '13px' : '16px')};
   outline: none;
   border: none;
-  font-weight: bold;
-  background: transparent;
-  border: 2px solid white;
   cursor: pointer;
+  margin: 10px;
 
   &:hover {
     transition: all 0.3s ease-out;
-    color: black;
     background: #fff;
-    background-color: #fff ;
-    /* background-color: ${({ primary }) => (primary ? '#0467FB' : '#4B59F7')}; */
+    background-color: ${({ primary }) => (primary ? '#0467FB' : '#4B59F7')};
   }
 
   @media screen and (max-width: 960px) {
-    width: 100%;
+    width: 45%;
   }
 `;
 

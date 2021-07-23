@@ -1,26 +1,19 @@
 import React from 'react'
+import SponsorCard from '../components/SponsorsPage/SponsorCard'
+import SponsorCard2 from '../components/SponsorsPage/SponsorCard2'
+import SponsorForm from '../components/SponsorsPage/SponsorForm'
+import '../components/SponsorsPage/styles.css';
+import Footer from '../components/HomePage/Footer/Footer'
 
-export default function Sponsor() {
+function Sponsor() {
     return (
-        <div>
-            SPONSER
+        <div className="sponsorCard" >
+            <SponsorCard />
+            <SponsorCard2 />
+            <SponsorForm />
+            <Footer />
         </div>
     )
 }
 
-// import React from 'react'
-// import Cards from "../components/Sponsors/Sponsors";
-// import Cards2 from "../components/Sponsors/Partners";
-// import Form1 from "../components/Sponsors/SponsorsForm";
-
-// function Sponsor() {
-//     return (
-//         <div>
-//             <Cards />
-//             <Cards2 />
-//             <Form1 />
-//         </div>
-//     )
-// }
-
-// export default Sponsor
+export default Sponsor;

@@ -1,0 +1,169 @@
+@import url(//db.onlinewebfonts.com/c/81dd3fb936d766a9cdee26cc3ca65477?family=Vipnagorgialla);
+@import url(//db.onlinewebfonts.com/c/00074c9ea86912d3a5142b6eaef49e8a?family=VipnagorgiallaW90-Regular);
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,100&display=swap');
+
+@font-face {
+    font-family: 'VBI';
+    src: url(../../assets/fonts/vipnagorgialla\ rg\ it.otf);
+  }
+  @font-face {
+    font-family: 'VRI';
+    src: url(../../assets/fonts/VpiBD.otf);
+  }
+  @font-face {
+    font-family: 'EXO';
+    src: url(../../assets/fonts/exo.medium-italic.otf);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+
+/* body{
+    position:relative;
+    background-color:  black;
+} */
+/* a{
+    pointer:cursor;
+} */
+.contactUsPage{
+    padding: 3px;
+    position:relative;
+    background-color:  black;
+    font-family: 'EXO';
+/*   
+    top : 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    z-index: 5;
+
+}
+
+.earth{
+    position:absolute;
+    height: 100vh;
+    width: 70vw;
+    background-image: url('../../assets/images/BG.png');
+    background-size: cover;
+    border-bottom-right-radius: 70%; 
+    z-index: -1;
+    overflow: hidden;
+    transform: translateY(-20vh);
+}
+/* #navbar{
+    z-index: 10;
+    background-color: transparent;
+}
+#techfest-logo{
+    width: 25vw;
+    height: 4vh;
+    margin-left: 1vw;
+    margin-top: 2vh;
+} */
+
+
+
+#FAQ{
+    background-color: transparent;
+    color: white;
+    
+}
+#faq-container{
+    font-family: 'Exo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#faqQuestions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+}
+.accordion-button{
+    background-color:transparent;
+    color:white;
+    border-bottom: 2px solid white;
+    padding: .7rem;
+}
+.answer-body{
+    color: black;
+    border:1px solid white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: white;
+    padding: .7rem;
+    text-align: justify;
+
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.accordion-button::after{
+    background-color: white;
+    border-radius:35%;
+}
+
+.faq-footer{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.phone-number{
+    text-decoration: none;
+    color:white
+}
+.coordinate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fab{
+    color:white;
+    width:2vw;
+    height:2vw;
+    margin: 1rem;
+    font-size: 2rem;
+
+}
+.graphics{
+    width:100%;
+    height:50vh;
+    background-image: url("../../assets/images/Vector.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    padding-bottom: 2px;
+    margin-bottom: 1px;;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+
+@media screen and  (max-width:450px){
+   /* .navbar-brand{
+       margin-right: 0px;
+   } */
+   .earth{
+       width: 100vw;
+   }
+}
+@media screen and (min-width:760px){
+    #faqQuestions{
+        width: 60%;
+    }
+}
