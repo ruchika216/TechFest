@@ -184,14 +184,14 @@ const Nav = props => {
 
             <MenuItem className="navmenu" component={Link} to="/pr-intern">PR Intern</MenuItem>
             <MenuItem className="navmenu" component={Link} to="/register">Register</MenuItem>
-              {
-                    isAuthenticated() && (
-                            <MenuItem className="navmenu" onClick={() => signout(() => {
-                                history.push("/")
-                            })}>Sign out</MenuItem>
-                        
-                    )
-                }
+            {
+              isAuthenticated() && (
+                <MenuItem className="navmenu" onClick={() => signout(() => {
+                  history.push("/")
+                })}>Sign out</MenuItem>
+
+              )
+            }
           </div>
           <IconButton
             color="inherit"
