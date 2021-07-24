@@ -6,19 +6,19 @@ import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
 // import { Redirect } from "react-router-dom";
 
-const LoginSignUp = ({isLogin}) => {
+const LoginSignUp = ({ isLogin }) => {
   const [buttonToggle, setButtonToggle] = useState(isLogin);
 
   const handleLoginSignUpButton = (e) => {
 
     if (e.target.name === "loginButton") {
-      
+
       setButtonToggle(true);
-      
+
     } else if (e.target.name === "signupButton") {
-      
+
       setButtonToggle(false);
-      
+
     }
   };
   return (
@@ -34,27 +34,27 @@ const LoginSignUp = ({isLogin}) => {
           <div className="LSbuttonBox">
             <button
               type="button"
-              className="toggle-btn"
+              className={buttonToggle ? "toggle-btn text-decoration-underline" : "toggle-btn"}
               name="loginButton"
               id="loginButton1"
               onClick={(e) => handleLoginSignUpButton(e)}
             >
-            <span>Login</span>
+              Login
             </button>
             <button
               type="button"
-              className="toggle-btn"
+              className={!buttonToggle ? "toggle-btn text-decoration-underline" : "toggle-btn"}
               name="signupButton"
-              id = "signupButton1"
+              id="signupButton1"
               onClick={(e) => handleLoginSignUpButton(e)}
             >
-              <span>SignUp</span>
+              SignUp
             </button>
           </div>
           {buttonToggle ? <LoginForm /> : <SignUpForm />};
         </div>
       </div>
-      
+
     </div>
   );
 };
