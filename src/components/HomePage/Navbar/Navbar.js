@@ -29,6 +29,7 @@ import { Box, MenuItem } from '@material-ui/core';
 import './Navbar.css';
 import { withRouter } from "react-router-dom";
 import Button from '@material-ui/core/Button';
+import { isAuthenticated, signout } from '../../../auth/helper';
 
 const drawerWidth = 240;
 
@@ -183,6 +184,14 @@ const Nav = props => {
 
             <MenuItem className="navmenu" component={Link} to="/pr-intern">PR Intern</MenuItem>
             <MenuItem className="navmenu" component={Link} to="/register">Register</MenuItem>
+              {
+                    isAuthenticated() && (
+                            <MenuItem className="navmenu" onClick={() => signout(() => {
+                                history.push("/")
+                            })}>Sign out</MenuItem>
+                        
+                    )
+                }
           </div>
           <IconButton
             color="inherit"

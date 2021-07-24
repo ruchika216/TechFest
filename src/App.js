@@ -12,6 +12,7 @@ import Sponsor from './pages/Sponsor';
 import ContactUs from './pages/ContactUs';
 import ScrollToTop from './components/ScrollToTop';
 import { Navbar, Footer } from './components';
+import SignIn from './pages/SignIn';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Switch>
         <Route exact path='/pr-intern' component={PrIntern} />
         <Route exact path='/register' component={Register} />
+        <Route exact path='/signin' component={SignIn} />
         <Route exact path='/domain' component={Domain} />
         <Route exact path='/workshop' component={Workshop} />
         <Route exact path='/about-us' component={AboutUs} />

@@ -1,12 +1,12 @@
 import React from 'react';
 import LoginSignUp from '../components/RegisterPage/LoginSignUp';
 
-function Register() {
+function SignIn() {
     return (
         <div style = {{backgroundColor:'black'}}>
-            <LoginSignUp isLogin={false} />
+            <LoginSignUp isLogin={true} />
         </div>
     )
 }
 
-export default Register
+export default SignIn
