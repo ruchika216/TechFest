@@ -4,21 +4,21 @@ import "./LoginSignUp.css";
 import bglogo from "../../assets/images/LSBGlogo.png";
 import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 
 const LoginSignUp = ({isLogin}) => {
   const [buttonToggle, setButtonToggle] = useState(isLogin);
 
-
   const handleLoginSignUpButton = (e) => {
+
     if (e.target.name === "loginButton") {
+      
       setButtonToggle(true);
-      // return <Redirect to="/signin" />
-      // console.log(buttonToggle)
+      
     } else if (e.target.name === "signupButton") {
+      
       setButtonToggle(false);
-      // return <Redirect to="/register" />
-      // console.log(buttonToggle);
+      
     }
   };
   return (
@@ -36,17 +36,19 @@ const LoginSignUp = ({isLogin}) => {
               type="button"
               className="toggle-btn"
               name="loginButton"
+              id="loginButton1"
               onClick={(e) => handleLoginSignUpButton(e)}
             >
-              Login
+            <span>Login</span>
             </button>
             <button
               type="button"
               className="toggle-btn"
               name="signupButton"
+              id = "signupButton1"
               onClick={(e) => handleLoginSignUpButton(e)}
             >
-              SignUp !
+              <span>SignUp</span>
             </button>
           </div>
           {buttonToggle ? <LoginForm /> : <SignUpForm />};
