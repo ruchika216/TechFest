@@ -36,14 +36,14 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    zIndex: 10,
+    zIndex: 25,
 
   },
 
   appBar: {
     backgroundColor: 'transparent',
     // background: 'transparent',
-    zIndex: 10,
+    zIndex: 25,
     boxShadow: 'none',
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -184,14 +184,14 @@ const Nav = props => {
 
             <MenuItem className="navmenu" component={Link} to="/pr-intern">PR Intern</MenuItem>
             <MenuItem className="navmenu" component={Link} to="/register">Register</MenuItem>
-              {
-                    isAuthenticated() && (
-                            <MenuItem className="navmenu" onClick={() => signout(() => {
-                                history.push("/")
-                            })}>Sign out</MenuItem>
-                        
-                    )
-                }
+            {
+              isAuthenticated() && (
+                <MenuItem className="navmenu" onClick={() => signout(() => {
+                  history.push("/")
+                })}>Sign out</MenuItem>
+
+              )
+            }
           </div>
           <IconButton
             color="inherit"
