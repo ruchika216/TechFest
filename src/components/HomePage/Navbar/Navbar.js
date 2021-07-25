@@ -36,14 +36,14 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    zIndex: 10,
+    zIndex: 25,
 
   },
 
   appBar: {
     backgroundColor: 'transparent',
     // background: 'transparent',
-    zIndex: 10,
+    zIndex: 25,
     boxShadow: 'none',
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
