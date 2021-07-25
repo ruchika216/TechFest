@@ -11,7 +11,10 @@ import AboutUs from './pages/AboutUs';
 import Sponsor from './pages/Sponsor';
 import ContactUs from './pages/ContactUs';
 import ScrollToTop from './components/ScrollToTop';
+
+import UserDashboard from './components/Dashboard/user/UserDashboard';
 import { Navbar, Footer } from './components';
+import PrivateRoute from './auth/helper/privateRoutes'
 import SignIn from './pages/SignIn';
 
 function App() {
@@ -31,6 +34,9 @@ function App() {
         <Route exact path='/contact-us' component={ContactUs} />
         <Route path='/sign-up' component={SignUp} />
         <Route exact path='/' component={Home} />
+
+        <PrivateRoute path="/user/dashboard" exact component={UserDashboard} />
+
       </Switch>
       <Footer />
     </Router>
