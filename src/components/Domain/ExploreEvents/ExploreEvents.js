@@ -1,17 +1,24 @@
 import React from 'react'
 import classes from './exploreEvents.module.css'
+<<<<<<< HEAD
 import { BASE_API } from '../../../Utils/backend';
 import {Calendar, Clock} from 'react-bootstrap-icons'
 import { CalendarViewDayRounded } from '@material-ui/icons';
 
 
 export const ExploreEvents=(props)=>{
+=======
+import img1 from '../../../assets/images/bg4.jpg';
+
+export const ExploreEvents=()=>{
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
     return(
         <div className={classes.eventContainer}>
             <hr/>
             <div className={classes.eventContent}>
                 <div className={classes.eventImage}>
                     <div className={classes.eventImageContainer}>
+<<<<<<< HEAD
                         <img src={`${BASE_API}${props.content.photo}`} alt=''/>
                     </div>
                     <div className={classes.eventDeadline}>
@@ -25,13 +32,26 @@ export const ExploreEvents=(props)=>{
                             <p>{`${props.content.regEndDate.split('T')[1].split('.')[0]}`}</p>
                         </span> */}
                         
+=======
+
+                    </div>
+                    <div className={classes.eventDeadline}>
+                        <p>Register Before : 09/07</p>
+                        <p>11:59 PM</p>
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
                     </div>
                 </div>
                 <div className={classes.eventInfo}>
                     <div className={classes.text}>
+<<<<<<< HEAD
                         <h1>{props.content.eventName}</h1>
                         <p>
                             {props.content.eventDescription}
+=======
+                        <h1>Name of Event</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in .
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
                         </p>
                     </div>
                     <span>
@@ -42,6 +62,7 @@ export const ExploreEvents=(props)=>{
                 <div className={classes.eventPrize}>
                     <div className={classes.prizeMoney}>
                         <p>Prizes Worth</p>
+<<<<<<< HEAD
                         <p>{`Rs : ${props.content.prize[0].split(',').map(i=>Number(i)).reduce((a,b)=>a+b,0)}` }</p>
                     </div>
                     <div className={classes.coordinatorContainer}>
@@ -57,6 +78,25 @@ export const ExploreEvents=(props)=>{
                             )
                         })}
                         
+=======
+                        <p>Rs 50,000</p>
+                    </div>
+                    <div className={classes.coordinatorContainer}>
+                        <div className={classes.coordinator}>
+                            <div className={classes.coordinatorDetails}>
+                                <p>Event Coordinator</p>
+                                <p>+91 xxxxx xxxxx</p>
+                            </div>
+                            <img src={img1} alt='' className={classes.coordinatorImage}/>
+                        </div>
+                        <div className={classes.coordinator}>
+                            <div className={classes.coordinatorDetails}>
+                                <p>Event Coordinator</p>
+                                <p>+91 xxxxx xxxxx</p>
+                            </div>
+                            <img src={img1} alt='' className={classes.coordinatorImage}/>
+                        </div>
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
                     </div>
                 </div>
             </div>

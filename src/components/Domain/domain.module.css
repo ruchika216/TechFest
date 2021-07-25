@@ -1,5 +1,6 @@
 .container{
     box-sizing: border-box;
+<<<<<<< HEAD
     min-height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
@@ -13,12 +14,26 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+=======
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+.content{
+    margin-top: 22vh;
+    margin-left: 7vw;
+    position: relative;
+    min-height: 73%;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
 }
 .text{
     color: white;
     min-width: 16vw;
     max-width: 35vw;
+<<<<<<< HEAD
     overflow: hidden;
+=======
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
     height:28vh;
 }
 
@@ -28,12 +43,32 @@
 }
 .text p{
     font-size:1.3rem;
+<<<<<<< HEAD
     font-family: EXO;
     font-weight: 500;
     word-wrap: break-word;
     word-break: keep-all;
     font-style: italic;
 }
+=======
+    font-family: EMI;
+    font-weight: 500;
+    font-style: italic;
+}
+.earth{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    left: 9%;
+    overflow: hidden;
+    transform: rotateZ(-40deg);
+}
+.root{
+    max-width: 200px;
+    max-height: 150px;
+    background:  red;
+}
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
 .gradeintLogo{
     position: absolute;
     width: 40vw;
@@ -94,17 +129,26 @@
     overflow: hidden;
 }
 .cardData h4{
+<<<<<<< HEAD
     font-family: EXO;
+=======
+    font-family: EMI;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
     font-size: 24px;
     font-weight: 600;
     font-style: italic;
 }
 .cardData p{
+<<<<<<< HEAD
     font-family: EXO;
+=======
+    font-family: EMI;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
     font-weight: 400;
     font-size: 12px;
     margin-bottom: 5px;
     font-style: normal;
+<<<<<<< HEAD
     width: 100%;
     height: 80%;
     overflow: hidden;
@@ -117,6 +161,17 @@
     position: absolute;
     right: 0;
     top: 0;
+=======
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+.displayImage{
+    width: auto;
+    height: 70vh;
+    position: fixed;
+    right: 25vw;
+    top: 7vh;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
     z-index: 0;
 }
 .earthImage{
@@ -136,7 +191,10 @@
     border-radius: 4px;
     font-size: 16px;
     font-style: italic;
+<<<<<<< HEAD
     font-family: EXO;
+=======
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
     margin-bottom: 2vh;
     margin-top: 10px;
 }
@@ -147,20 +205,30 @@
     display: flex;
     margin-bottom: 10px;
     color: white;
+<<<<<<< HEAD
     font-family:EXO;
+=======
+    font-family:EMI;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
     justify-content: space-between;
 }
 .coordinators h6{
     margin-top: 10%;
     font-size: 16px;
     font-weight: 600;
+<<<<<<< HEAD
     font-family: EXO;
+=======
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
     font-style: italic;
 }
 .coordinators p{
     font-size: 13px;
     font-weight: 300;
+<<<<<<< HEAD
     font-family: EXO;
+=======
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
     font-style: italic;
 }
 .facultyCoordinator{
@@ -183,6 +251,7 @@
 .active{
     border: 0.5px solid greenyellow;
 }
+<<<<<<< HEAD
 .domainHeading{
     text-align: center;
     color: white;
@@ -190,6 +259,8 @@
     font-family: VBI;
     font-size: 3.3rem;
 }
+=======
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
 .animate-enter {
     opacity: 0;
   }
