@@ -1,0 +1,279 @@
+.eventContainer{
+    width: 90vw;
+<<<<<<< HEAD
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #02020E;
+=======
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
+}
+hr{
+    color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5px solid white;
+}
+.eventContent{
+    background-color: transparent;
+    width: 100%;
+    height: 70%;
+    margin-top: 25px;
+    display: flex;
+    padding:12px;
+    padding-bottom: 4px;
+    justify-content: space-evenly;
+}
+.eventImage{
+<<<<<<< HEAD
+    width: 20%;
+=======
+    width: 15%;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
+    height: 100%;
+}
+.eventInfo{
+    width: 40%;
+    height: 100%;
+}
+.eventPrize{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+.text{
+    color: white;
+    min-width: 16vw;
+    max-width: 35vw;
+<<<<<<< HEAD
+    height:100%;
+=======
+    height:80%;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
+}
+
+.text h1{
+    font-family: VBI;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+.text p{
+    font-size:1.3rem;
+<<<<<<< HEAD
+    font-family: EXO;
+=======
+    font-family: EMI;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
+    font-weight: 500;
+    font-style: italic;
+}
+.btnRegister{
+    background-color: #FFF;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 6px 18px;
+    font-size: 16px;
+<<<<<<< HEAD
+    font-family: EXO;
+=======
+    font-family: EMI;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
+    font-style: italic;
+    margin-right: 24px;
+}
+.btnStatement{
+    background-color: transparent;
+    outline: none;
+    border: 0.5px solid white;
+    border-radius: 4px;
+    padding:6px 18px;
+    font-size: 16px;
+<<<<<<< HEAD
+    font-family: EXO;
+    color: white;
+    font-style: italic;
+}
+.eventImageContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.eventDeadline{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 8% 90%;
+    grid-row: auto;
+    margin-top: 16px;
+}
+.eventDeadline p{
+    font-family: EXO;
+=======
+    font-family: EMI;
+    color: white;
+    font-style: italic;
+}
+.eventImageContainer{
+    width: 100%;
+    height: 80%;
+    border-radius: 4px;
+    background-color: #c4c4c4;
+}
+.eventDeadline{
+    font-family: EMI;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    font-style: normal;
+}
+.coordinatorContainer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.coordinatorImage{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.coordinator{
+    display: flex;
+    color: white;
+    width: 45%;
+    justify-content: space-evenly;
+<<<<<<< HEAD
+    font-family: EXO;
+=======
+    font-family: EMI;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
+    font-size: 12px;
+}
+.coordinatorDetails{
+    margin-top: 8px;
+}
+<<<<<<< HEAD
+.coordinatorDetails p{
+    font-family: EXO;
+}
+.prizeMoney{
+    position: absolute;
+    right: 0;
+    font-family: EXO;
+=======
+.prizeMoney{
+    position: absolute;
+    right: 0;
+    font-family: EMI;
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+}
+<<<<<<< HEAD
+.prizeMoney p{
+    font-family: EXO;
+}
+=======
+>>>>>>> 52f9e7096fd49bfb424241d101b1377d03820c20
+@media screen and (max-width:480px) {
+    .eventContainer{
+        height: 100vh;
+        width: 95vw;
+    }
+    .eventContent{
+     flex-direction: column;
+     height: 90%;
+     padding-top: 0px;
+    }
+    .eventImage{
+        width: 100%;
+        height: 45%;
+    }
+    .eventInfo{
+        width: 100%;
+        height: 35%;
+    }
+    .eventPrize{
+        width: 100%;
+        height: 20%;
+        position: relative;
+    }
+    .text{
+        max-width: 100%;
+    }
+    .btnRegister{
+        padding: 4px 16px;
+        font-size: 12px;
+        margin-right: 16px;
+    }
+    .btnStatement{
+        padding: 4px 16px;
+        font-size: 12px;
+    }.prizeMoney{
+        font-size: 18px;
+    }
+    .coordinator{
+        font-size:10px ;
+    }
+    .coordinatorImage{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (max-width:768px){
+    .eventContainer{
+        height: 85vh;
+        width: 95vw;
+    }
+    .eventContent{
+     height: 80%;
+     flex-wrap: wrap;
+     padding-top: 0px;
+    }
+    .eventImage{
+        width: 30%;
+        height: 60%;
+    }
+    .eventInfo{
+        width: 60%;
+        height: 60%;
+    }
+    .eventPrize{
+        width: 100%;
+        height: 40%;
+        position: relative;
+    }
+    .text{
+        max-width: 100%;
+    }
+    .btnRegister{
+        padding: 6px 18px;
+        font-size: 16px;
+        margin-right: 16px;
+    }
+    .btnStatement{
+        padding: 6px 18px;
+        font-size: 16px;
+    }.prizeMoney{
+        font-size: 18px;
+    }
+    .coordinator{
+        font-size:14px ;
+    }
+    .coordinatorImage{
+        width: 64px;
+        height: 64px;
+    }
+}
