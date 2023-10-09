@@ -1,6 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Project Video 
+
+https://github.com/ruchika216/TechFest/assets/54766813/94c60dd6-2706-4d83-91f4-6360d0c52425
+
+
 https://drive.google.com/file/d/1j5ZOouRp9udeTXQfsqBXmQCItrz__XHg/view
 
 ## Available Scripts
